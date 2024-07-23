@@ -38,41 +38,6 @@ document.addEventListener("click", function (e) {
 
 // ==============================================================================
 
-//button send message
-function sendEmail() {
-  // Prevent default form submission
-  event.preventDefault();
-
-  // Get form data
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const message = document.getElementById("message").value;
-
-  // Send the data to the server using fetch or an AJAX library
-  fetch("/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ name, email, phone, message }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.message) {
-        // Email sent successfully
-        alert("Email sent successfully!");
-      } else if (data.error) {
-        // Error sending email
-        alert("Error sending email: " + data.error);
-      }
-    })
-    .catch((error) => {
-      console.error(error);
-      alert("An error occurred. Please try again later.");
-    });
-}
-
 //Modal Box
 const itemDetailModal = document.querySelector("#item-detail-modal");
 const itemDetailButtons = document.querySelectorAll(".item-detail-button");
