@@ -18,10 +18,16 @@ html {
 }
 
 .navbar-logo {
-  height: 50px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
   width: auto; /* Maintain aspect ratio */
   display: flex;
   align-items: center;
+}
+
+.navbar img {
+  height: 90px;
+  width: 18rem;
+  color: var(--bg);
 }
 
 body {
@@ -51,7 +57,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0 1.2rem;
   position: center;
 }
@@ -188,7 +194,7 @@ body {
 .product,
 .products,
 .contact {
-  padding: 8rem 7% 1.4rem;
+  padding: 12rem 7% 1.4rem;
 }
 
 .about h2,
