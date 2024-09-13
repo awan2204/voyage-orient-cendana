@@ -25,9 +25,9 @@ html {
 }
 
 .navbar img {
-  height: 90px;
-  width: 18rem;
-  color: var(--bg);
+  height: 450px;
+  width: 27rem;
+  margin-top: 2.5rem;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 1.2rem;
   position: center;
 }
@@ -194,7 +194,7 @@ body {
 .product,
 .products,
 .contact {
-  padding: 12rem 7% 1.4rem;
+  padding: 10rem 7% 1.4rem;
 }
 
 .about h2,
@@ -611,6 +611,16 @@ footer .credit a {
   }
   #hamburger-menu {
     display: inline-block;
+  }
+
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .navbar img {
+    height: 300px;
+    width: 20rem;
+    margin-top: 2.1rem;
   }
 
   .navbar .navbar-nav {
